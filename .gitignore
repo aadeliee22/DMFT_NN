@@ -1,0 +1,10 @@
+1_dmftsolver/ED/build/
+1_dmftsolver/ED/modules/
+1_dmftsolver/ED/pybind11/
+1_dmftsolver/ED/src/
+1_dmftsolver/QMC/build/
+1_dmftsolver/QMC/gfmod/
+1_dmftsolver/QMC/pybind11/
+1_dmftsolver/QMC/src/
+1_dmftsolver/IPT/DMFT_IPT_SOLVER/*.cpp
+1_dmftsolver/IPT/DMFT_IPT_SOLVER/*.h
