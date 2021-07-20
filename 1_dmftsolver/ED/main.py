@@ -15,7 +15,7 @@ def main():
     niwn = 5000
     nbath = 5
 	# 2.3 ~ 2.9 phase coexistence region (metal & insulator)
-    # U > 2.9 : insulator; U < 2.3 : metal
+    # U > 2.9 : insulator; U < 2.4 : metal
     U = args.U
     mu = U/2.0
     D = 1.0
@@ -46,6 +46,7 @@ def main():
         print (" - <N_up*N_dw>: ", double_occ)
         # save current states
         np.savetxt(prefix + f'checkpoint-{U:.2f}', solver.get_pvec().reshape([1, -1]))
+        np.savetxt(prefix + f'Giw-{U:.2f}.dat', np.array([omega.imag, G_new.real, G_new.imag]).T)
         with open(prefix + f'result-{U:.2f}', 'w') as f:
             f.write('DENSITY: %f\n'%density)
             f.write('DOUBLE-OCC: %f\n'%double_occ)
@@ -59,7 +60,7 @@ def main():
                 break
         print ("\n")
         sys.stdout.flush()
-    np.savetxt(prefix + f'Giw-{U:.2f}.dat', np.array([omega.imag, G_new.real, G_new.imag]).T)
+
 
 
 if __name__ == "__main__":
