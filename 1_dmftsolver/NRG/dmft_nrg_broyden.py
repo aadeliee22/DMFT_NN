@@ -19,7 +19,7 @@ parser.add_argument("-alp", help = "alpha", type = float, default = 0.8)
 parser.add_argument("-lamb", help = "lambda", type = float, default = 2.4)
 parser.add_argument("-keepE", help = "keep energy", type = float, default = 12.0)
 parser.add_argument("-niter", help = "# of iterations", type = int, default = 100)
-parser.add_argument("-tol", help = "tolerance of the convergence criterion", type = float, default = 1e-4)
+parser.add_argument("-tol", help = "tolerance of the convergence criterion", type = float, default = 5e-4)
 parser.add_argument("-load", help = "file name of previous data to restart a DMFT loop", type = str, default = None)
 parser.add_argument("-way", help = "direction", type = int)
 args = parser.parse_args()
@@ -32,7 +32,7 @@ niter = args.niter
 tol = args.tol
 lamb = args.lamb
 way = args.way
-filename = f'./B_{way:.0f}_2.4/Bethe-{U:.3f}.dat'
+filename = f'./Bethe_{way:.0f}_beta10000/Bethe-{U:.3f}.dat'
 #==============================================
 # particle-hole symmetric case
 mu = U/2
