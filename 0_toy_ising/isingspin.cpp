@@ -102,7 +102,7 @@ int main()
 	cout << "File open" << endl;
 	File << "temp m spin " << endl;
 
-	for (int k = 150; k < 350; k++) { // 1.5 ~ 3.49, 200
+	for (int k = 150; k < 300; k++) { // 1.5 ~ 3.49, 150
 		for (int h = 0; h < 50; h++) {
 			MC_1cycle(size, 0.01 * k, Mag, near, array);
 			File << 0.01 * k << " " << Mag << " ";
