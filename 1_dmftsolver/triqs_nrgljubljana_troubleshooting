@@ -1,0 +1,28 @@
+sudo python3 -m pip install mako
+python3 -m pip install mako
+# mako, mpi4py, hdf5, GSL, mkl(for intel)
+
+module load gcc/9.2.0
+module load mpi/openmpi-x86_64
+
+
+# Check the 'PATH' variable, /usr/bin/gcc /usr/bin/g++
+# which gcc does not always work well
+cmake ../ -DCMAKE_C_COMPILER=$(which gcc) -DCMAKE_CXX_COMPILER=$(which g++) -DCMAKE_INSTALL_PREFIX=$(pwd)
+
+
+# Don't forget to source triqsvars.sh after make install
+vim .bashrc
+source ~/lib/triqs/build/share/triqsvars.sh
+source ~/lib/triqs.build/triqsvars.sh
+
+
+# what is wrong
+gcc 4.xxx abi c++11 gcc 4.xxx<
+boost 1.76 latest -> 1.65.1 version is better in some case(?)
+But we figured out that boost 1.77 (O) > 1.74 (O) > 1.72 (?) > 1.65 (X) > 1.53 (X)
+
+
+# WHATTHEFUCK
+# TODO: triqs, nrgljubljana src copy-paste, boost 1.65.1, cmake && make && make test && make install
+include path

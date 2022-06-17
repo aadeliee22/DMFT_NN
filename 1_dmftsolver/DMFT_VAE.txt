@@ -1,0 +1,14 @@
+* VAE+ising
+
+- Deep learning on the 2-dimensional Ising model to extract the crossover region with a variational autoencoder: https://www.nature.com/articles/s41598-020-69848-5
+
+- https://arxiv.org/pdf/2111.01112.pdf
+
+
+* Hirsch-Fye
+
+- Blumer, Hirsch-Fye QMC for DMFT: https://www.cond-mat.de/events/correl11/manuscript/Bluemer.pdf
+- Maier, Jarrell, Pruschke, Hettler, Quamtum cluster theories: https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.77.1027
+- Georges, Kotliar, Krauth, Rozenberg, DMFT of strongly correlated fermion systems and the limit of infinite dimensions: https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.68.13
+- Hirsch, Rye, MC for Magnetic Impurities in metals: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.56.2521
+- Jarrell, Macridin, Mikelsons, QMC algorithms for Quantum Cluster Problem: http://www.phys.lsu.edu/~jarrell/Green/QMC_Salerno.pdf
